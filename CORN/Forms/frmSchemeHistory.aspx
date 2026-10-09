@@ -1,0 +1,8 @@
+﻿<%@ Page Title="MPR :: Scheme/ Project History" Language="C#" MasterPageFile="~/Forms/PageMaster.master" AutoEventWireup="true" CodeFile="frmSchemeHistory.aspx.cs" Inherits="Forms_frmSchemeHistory" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHeadPage" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphPage" Runat="Server">
+    <h1> Comming soon...</h1>
+</asp:Content>
+

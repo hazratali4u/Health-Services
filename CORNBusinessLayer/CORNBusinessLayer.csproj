@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CC9CBCE-9BBF-440E-850A-7B51F914792E}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CORNBusinessLayer</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CORNBusinessLayer</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <SccAuxPath>SAK</SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\CORNCommon\@Resources\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\CORNCommon\@Resources\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\CORNCommon\@Resources\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConfigManager.cs" />
+    <Compile Include="ExecutionManager.cs" />
+    <Compile Include="OperationMaintenanceManager.cs" />
+    <Compile Include="ConcernedFederalMinistryManager.cs" />
+    <Compile Include="GroupManager.cs" />
+    <Compile Include="PC1SchemeFundApprovalManager.cs" />
+    <Compile Include="PC1SchemeStageManager.cs" />
+    <Compile Include="SchemeFundProposalManager.cs" />
+    <Compile Include="SponsoringManager.cs" />
+    <Compile Include="GeoHierarchyManager.cs" />
+    <Compile Include="SchemeGSCodeManager.cs" />
+    <Compile Include="PC1SchemeManager.cs" />
+    <Compile Include="SchemeManager.cs" />
+    <Compile Include="FundTypeManager.cs" />
+    <Compile Include="InstituteNatureManager.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\AccountHeadController.cs" />
+    <Compile Include="Classes\AppliedPromotionCol_Controller.cs" />
+    <Compile Include="Classes\AppliedPromotion_Collection.cs" />
+    <Compile Include="Classes\BankController.cs" />
+    <Compile Include="Classes\ChequeEntryController.cs" />
+    <Compile Include="Classes\COAMappingController.cs" />
+    <Compile Include="Classes\CompanyController.cs" />
+    <Compile Include="Classes\ConfigurationController.cs" />
+    <Compile Include="Classes\DAL.cs" />
+    <Compile Include="Classes\DistributorRouteController.cs" />
+    <Compile Include="Classes\FinancialYearController.cs" />
+    <Compile Include="Classes\ILookUp.cs" />
+    <Compile Include="Classes\HealthSchemeController.cs" />
+    <Compile Include="Classes\LedgerController.cs" />
+    <Compile Include="Classes\LookupController.cs" />
+    <Compile Include="Classes\MenuController.cs" />
+    <Compile Include="Classes\RptSchemeController.cs" />
+    <Compile Include="Classes\RptAccountController.cs" />
+    <Compile Include="Classes\CustomerDataController.cs" />
+    <Compile Include="Classes\DistributorController.cs" />
+    <Compile Include="Classes\Distributor_UserController.cs" />
+    <Compile Include="Classes\DocumentPrintController.cs" />
+    <Compile Include="Classes\EmployeController.cs" />
+    <Compile Include="Classes\GeoHierarchyController.cs" />
+    <Compile Include="Classes\RoleManagementController.cs" />
+    <Compile Include="Classes\SaleForceController.cs" />
+    <Compile Include="Classes\SETTINGS_TABLE_Controller.cs" />
+    <Compile Include="Classes\ShiftController.cs" />
+    <Compile Include="Classes\SLASHCodesController.cs" />
+    <Compile Include="Classes\SyncServerController.cs" />
+    <Compile Include="Classes\UserController.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ChartManager.cs" />
+    <Compile Include="ReportManager.cs" />
+    <Compile Include="Reports\CrpchartOfAccunt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpchartOfAccunt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrpPettyCaahSummery.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpPettyCaahSummery.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrpPetyCashSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpPetyCashSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrpPrincipalWiseExp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpPrincipalWiseExp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CrpRoleManagement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrpRoleManagement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crpVoucherView.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpVoucherView.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crSchemeTest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSchemeTest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DsReport.cs">
+      <DependentUpon>DsReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DsReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DsReport2.cs">
+      <DependentUpon>DsReport2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DsReport2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsReport2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DSReportNew.cs">
+      <DependentUpon>DSReportNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DSReportNew.Designer.cs">
+      <DependentUpon>DSReportNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsSalesPurchaseRegister.cs">
+      <DependentUpon>dsSalesPurchaseRegister.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsSalesPurchaseRegister.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalesPurchaseRegister.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LatestDataSet.cs">
+      <DependentUpon>LatestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LatestDataSet.Designer.cs">
+      <DependentUpon>LatestDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovedByManager.cs" />
+    <Compile Include="SchemeExcessManager.cs" />
+    <Compile Include="SchemeReappropriationManager.cs" />
+    <Compile Include="SchemeFundReleaseManager.cs" />
+    <Compile Include="SchemeFundAllocationManager.cs" />
+    <Compile Include="SchemePOReferenceNoManager.cs" />
+    <Compile Include="SchemeExpenseBookingManager.cs" />
+    <Compile Include="SchemeFundApprovalManager.cs" />
+    <Compile Include="SchemeDocumentManager.cs" />
+    <Compile Include="FinancialYearManager.cs" />
+    <Compile Include="SchemeStageManager.cs" />
+    <Compile Include="SchemeStageStatusManager.cs" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DsReport.xsc">
+      <DependentUpon>DsReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DsReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DsReport.xss">
+      <DependentUpon>DsReport.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DsReport2.xsc">
+      <DependentUpon>DsReport2.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DsReport2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsReport2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DsReport2.xss">
+      <DependentUpon>DsReport2.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DSReportNew.xsc">
+      <DependentUpon>DSReportNew.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DSReportNew.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSReportNew1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\DSReportNew.xss">
+      <DependentUpon>DSReportNew.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsSalesPurchaseRegister.xsc">
+      <DependentUpon>dsSalesPurchaseRegister.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\dsSalesPurchaseRegister.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalesPurchaseRegister.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\dsSalesPurchaseRegister.xss">
+      <DependentUpon>dsSalesPurchaseRegister.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\LatestDataSet.xsc">
+      <DependentUpon>LatestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\LatestDataSet.xsd" />
+    <None Include="Reports\LatestDataSet.xss">
+      <DependentUpon>LatestDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\CrpchartOfAccunt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpchartOfAccunt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrpPettyCaahSummery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpPettyCaahSummery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrpPetyCashSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpPetyCashSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrpPrincipalWiseExp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpPrincipalWiseExp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrpRoleManagement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrpRoleManagement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crpVoucherView.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpVoucherView.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crSchemeTest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSchemeTest.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CORNCommon\CORNCommon.csproj">
+      <Project>{848c4fc7-6e77-4041-925b-4b874b9e7c4e}</Project>
+      <Name>CORNCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CORNDataAccessLayer\CORNDataAccessLayer.csproj">
+      <Project>{26d8191c-6d6a-4457-bd84-41f5dfaaf9c2}</Project>
+      <Name>CORNDataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CORNDatabaseLayer\CORNDatabaseLayer.csproj">
+      <Project>{df27a1c1-7bfd-44df-98fd-d3598947f58e}</Project>
+      <Name>CORNDatabaseLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
